@@ -1,0 +1,41 @@
+
+
+header {
+    height: 100px;
+    background-color: aqua;
+}
+
+nav{
+    width: 20%;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+article {
+    width: 60%;
+    background-color: blue;
+    
+}
+
+aside {
+    width: 20%;
+    background-color: yellow;
+}
+
+
+footer {
+    height: 80px;
+    background-color: aqua;
+}
+
+header, nav, article, aside , footer {
+    margin:2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: auto;
+    font-size: 18px;
+
+}

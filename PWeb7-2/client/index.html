@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="../client/src/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <img src="./src/assets/icons/logo.png" alt="logo" class="logo"/>
+    </header>
+
+    <div class="container"> 
+        <h3>Formulario dinámico</h3>
+        
+        <div class="container-form">
+            <div class="card question-card">
+                <div class="card-body">
+                    <form id="question-form">
+                        <div class="form-group">
+                            <label for="num-questions">Ingrese el número de preguntas:</label>
+                           
+                            <input class="form-control" id="num-questions" name="num-questions" type="text" required>  
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" onclick="generateQuestions()">Generar formulario</button>
+                            <button type="button" class="btn btn-danger cancel-button" onclick="cancelForm()">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-form">
+            <div class="card generate-card">
+                <div class="card-body" id="generated-form">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-answers">
+            <div class="card generate-card">
+                <div class="card-body" id="answers-form">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="../client/src/scripts/form.js"></script>
+</body>
+</html>
