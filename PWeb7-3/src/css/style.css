@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    border-radius: 10px;
+    height: 60px;
+    padding: 0 20px;
+    
+}
+
+.line{
+    border-bottom: 1px solid #d4d4d8;
+
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; 
+    justify-items: end;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.sidebar {
+    background: linear-gradient(45deg, #083344, #0e7490);
+    height: 100vh;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+   
+}
+
+
+
+.nav-item {
+    margin-bottom: 10px; 
+    color: #083344;
+}
+
+.btn-sidebar {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-sidebar:hover,
+.btn-sidebar:focus { 
+    background-color: #ecfeff;
+    color: #083344;
+    cursor: pointer;
+}
+
+.btn-sidebar {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-sidebar:hover {
+    background-color: #ecfeff;
+    color: #083344;
+    cursor: pointer;
+}
+
+
+.sidebar .nav-link {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    
+   
+} 
+
+.sidebar .nav-link:hover {
+    background-color: #ecfeff; 
+    color: #083344; 
+}
+.sidebar h4 {
+    margin-bottom: 10px;
+    margin: 20px;
+    color: white;
+}
+
+
+.container-sidebar {
+    margin-top: 20px;
+    padding: 2px;
+}
+
+h3 {
+    padding-bottom: 10px;
+    padding-top: 30px;  
+}
+
+.table-container h4 {
+    color: #0e7490;
+    
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+
+.main-content {
+    padding: 20px;
+}
+
+.container-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    flex: 1;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #edf2f7;
+    color: #4a5568;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #cbd5e0;
+    box-shadow: 0 0 0 0.2rem rgba(66, 153, 225, 0.25);
+}
+
+.error-message,
+.cedula-message,
+.error-numeric-message {
+    display: none;
+    color: #e53e3e;
+    font-size: 0.8rem;
+}
+
+.container-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    background-color: #083344; 
+    color: #ffffff;
+    
+}
+
+
+.container-button .btn-primary {
+    width: 150px;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.modal-title  {
+ flex:1;
+}
+
+.modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+
+#alertContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content {
+        width: calc(100% - 60px); 
+        margin-left: 60px; 
+    }
+
+    .sidebar {
+        width: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .sidebar .sidebar-icons {
+        margin-bottom: 10px;
+    }
+
+    .sidebar h4 {
+        display: none;
+    }
+
+   
+
+}
